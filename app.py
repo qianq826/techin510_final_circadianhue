@@ -15,7 +15,7 @@ client = IoTHubRegistryManager(connection_string)
 
 
 def send_rgb_to_esp32(r, g, b):
-    message = f'{{"r":{r},"g":{g},"b":{b}}}'
+    message = f'{{"red":{r},"green":{g},"blue":{b}}}'
     try:
         client.send_c2d_message(device_id, message)
         st.success("Color set successfully via IoT Hub!")
