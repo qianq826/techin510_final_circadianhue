@@ -228,7 +228,7 @@ def main():
         """, unsafe_allow_html=True)
     
     st.title('Circadian Hues')
-    location = st.text_input('Enter location in United Stated:')
+    location = st.text_input('Enter location in United States:')
     sleep_mode = st.checkbox('Activate Sleep Mode')
     wake_up_time = st.time_input("Wake up time", value=datetime.strptime("06:00", '%H:%M').time())
     bedtime = st.time_input("Bedtime", value=datetime.strptime("22:00", '%H:%M').time())
